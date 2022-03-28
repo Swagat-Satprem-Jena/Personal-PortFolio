@@ -1,0 +1,84 @@
+
+html{
+    scroll-behavior: smooth;
+} /*When we click on the Links in the navbar it doesnot jumps into that section directly rather it scrolls smoothly to that section*/
+
+body{
+    background: #1f2235;
+    font-family: "Baloo Tamma 2", cursive;
+}
+
+.m-heading{
+    font-family: "Roboto Slab", serif;
+}
+
+.navigation-link{
+    border: 2px solid transparent;
+}
+
+.navigation-link:hover{
+    text-decoration: none;
+    border-bottom: 2px solid #f5ba09;
+    transition: 0.5s ease;
+}
+
+.main-container{
+    min-height: 100vh;
+}
+
+.main_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_row h1{
+    font-size: 5rem;
+}
+
+.main_row img{
+    width: auto;
+    height: 100vh;
+}
+
+#about{
+    background: #313552;
+    border-radius: 0.5rem;
+}
+
+.card{
+    border-bottom: 8px solid #f5ba09;
+}
+
+#social-media{
+    background: #313552;
+}
+
+.media_link{
+    padding: 1rem;
+    max-width: 15rem;
+    margin-left: 1rem;
+    border: 2px solid #f5ba09;
+    border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    #display-page, 
+    #about,
+    #projects,
+    #social-media,
+    #display-page-columns,
+    #about-columns,
+    #projects-columns,
+    #social-media-columns,
+    #social-media-button-columns
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: auto auto;
+        padding: auto auto;
+        text-align: center;
+    }
+}
